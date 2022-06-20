@@ -1,0 +1,95 @@
+.trueDiv{
+    display: grid;
+    grid-template-columns: auto 400px 50px;
+    grid-template-areas: "mc td dd";
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.mainContent{
+    background: silver;
+    grid-area: mc;
+    border-right: 2px solid gray;
+    text-align:start;
+    margin-left:50px;
+}
+.timeDiv{
+    background: silver;
+    grid-area: td;
+    text-align: start;
+    margin-left: 50px;
+}
+.deleteDiv{
+    background: silver;
+    grid-area: dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid gray;
+}
+.deleteDiv:hover{
+    background: rgba(0, 0, 0, 0.26);
+    color: white;
+}
+.fa-close{
+    color: maroon;
+    font-size: 2em;
+    cursor: pointer;
+}
+.timeCounter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+    height: 20px;
+    overflow: hidden;
+}
+/* RESPONSIVE DESIGN */
+@media (min-width:200px) and (max-width:320px){
+    .trueDiv{
+        grid-template-columns: auto 50px 20px;
+        font-size: 0.5em;
+    }
+    .mainContent{
+        margin-left: 10px;
+    }
+    .timeDiv{
+        margin-left: 10px;
+    }
+    .timeCounter{
+        font-size: 0.2em;
+    }
+}
+@media (min-width:319px) and (max-width:480px){
+    .trueDiv{
+        grid-template-columns: auto 150px 30px;
+        font-size: 0.5em;
+    }
+    .mainContent{
+        margin-left: 10px;
+    }
+    .timeDiv{
+        margin-left: 10px;
+    }
+}
+@media (min-width:481px) and (max-width:768px){
+    .trueDiv{
+        grid-template-columns: auto 200px 50px;
+    }
+    .mainContent{
+        margin-left: 10px;
+    }
+    .timeDiv{
+        margin-left: 10px;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    .trueDiv{
+        grid-template-columns: auto 200px 50px;
+    }
+    .timeDiv{
+        margin-left: 10px;
+    }
+}
+@media (min-width:1025px){
+
+}

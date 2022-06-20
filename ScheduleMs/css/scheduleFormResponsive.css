@@ -1,0 +1,56 @@
+/* RESPONSIVE DESIGN */
+@media (min-width:200px) and (max-width:320px){
+    .scheduleForm{
+        font-size: 0.7em;
+        width: 175px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .scheduleForm input{
+        width: 110px;
+        height: 25px;
+        font-size: 0.2em;
+    }
+    .scheduleForm table tr td:nth-child(odd){
+        font-size: 0.1em;
+    }
+    .scheduleForm button{
+        width: 70px;
+        height: 25px;
+        text-align: center;
+    }
+    .scheduleForm table label{
+        padding-right: 10px;
+        float: left;
+    }
+}
+@media (min-width:319px) and (max-width:480px){
+    .scheduleForm{
+        font-size: 0.7em;
+        width: 290px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .scheduleForm input{
+        width: 180px;
+        height: 25px;
+    }
+    .scheduleForm table tr td:nth-child(odd){
+        font-size: 0.5em;
+    }
+    .scheduleForm button{
+        width: 100px;
+        height: 25px;
+        text-align: center;
+    }
+}
+@media (min-width:481px) and (max-width:768px){
+    .scheduleForm{
+        font-size: 0.7em;
+        width: 450px;
+        text-align: center;
+    }
+    .scheduleForm input{
+        width: 200px;
+    }
+}

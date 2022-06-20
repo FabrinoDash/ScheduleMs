@@ -1,0 +1,228 @@
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: silver;
+    user-select: none;
+}
+.header{
+    height: 70px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+}
+.logo{
+    text-align: center;
+    margin-left: 40px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 1px 1px 2px black;
+    color:silver;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+    margin: 0 10px;
+}
+.nav li{
+    display: inline-block;
+    list-style: none;
+    background: silver;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+    color: gray;
+    font-weight: bold;
+}
+.profileWelcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+.welcome{
+    margin-right: 10px;
+    color:white;
+}
+.welcome strong{
+    color: silver;
+    font-weight: 900;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg,white, black);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+.profile:hover{
+    background: linear-gradient(90deg,white, black);
+}
+.settings{
+    margin:30px auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.settings button{
+    margin: 10px auto;
+    cursor: pointer;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    background:gray;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 5px black,-1px -1px 5px black;
+    transition:10s ease;
+    font-weight: 500;
+}
+.settings button:hover{
+    background:linear-gradient(45deg, white,black,white);
+}
+.settings a{
+    text-align: center;
+}
+.passwordSetting{
+    margin:30px auto;
+    text-align: center;
+    background-color: rgba(192, 192, 192, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.passwordSetting input{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    border: 1px solid gray;
+    background: none;
+}
+.passwordSetting input:focus{
+    color: green;
+    outline-color: green;
+    outline-width: 2px;
+}
+.passwordSetting button{
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    cursor: pointer;
+    background: none;
+}
+
+/* RESPOSIVE HEADER */
+@media (min-width:0px) and (max-width:201px){
+    *{
+        display: none;
+    }
+}
+@media (min-width:200px) and (max-width:319px){
+    .header{
+        height: 50px;
+    }
+    .nav li{
+        width: 30px;
+        font-size: 0.5em;
+        padding: 5px 0;
+        border-radius: 5px;
+    }
+    .profileWelcome{
+        margin-right: 2px;
+    }
+    .profile{
+        width:30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .logo{
+        margin-left: 5px;
+        font-size: 0.2em;
+    }
+    .welcome{
+        display: none;
+    }
+    .passwordSetting input{
+        width:180px;
+        height:25px;
+    }
+    .passwordSetting button{
+        width:70px;
+        font-size: 0.5em;
+    }
+}
+@media (min-width:320px) and (max-width:480px){
+    .header{
+        height: 50px;
+    }
+    .nav li{
+        width: 40px;
+        font-size: 0.5em;
+        padding: 5px 0;
+        border-radius: 5px;
+    }
+    .profileWelcome{
+        margin-right: 10px;
+    }
+    .profile{
+        width:30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .logo{
+        margin-left: 5px;
+        font-size: 0.5em;
+    }
+    .welcome{
+        font-size: 0.4em;
+        margin-right: 4px;
+    }
+}
+@media (min-width:481px) and (max-width:768px){
+    .profileWelcome{
+        margin-right: 10px;
+    }
+    .logo{
+        font-size: 0.6em;
+        margin-left: 10px;
+    }
+    .nav li{
+        font-size: 0.9em;
+        border-radius: 5px;
+        width: 70px;
+    }
+    .welcome{
+        font-size: 0.5em;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    .nav li{
+        width: 110px;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .profileWelcome{
+        margin-right: 10px;
+    }
+}
+@media (min-width:1025px){
+/* Default */
+}
